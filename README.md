@@ -15,9 +15,9 @@ pip install requirements.txt
 ### Usage
 1.Select various model configurations in the `cfg\models` folder for experimental comparison. There are already baseline models and the EEC-DETR model designed by me. The `.py` files in the `nn\modules` folder contain various modules, such as `PSCONV`, `WTCONV`, etc. You are supported to create new `.yaml` files in the `cfg\models` folder to freely configure new models. 
 
-2.example
+2. train example
 ```
-Import the RTDETR class from the ultralytics library
+# Import the RTDETR class from the ultralytics library
 from ultralytics import RTDETR
 
 if __name__ == '__main__':
@@ -48,7 +48,25 @@ if __name__ == '__main__':
     )
 
 ```
-### Usage
+3. predict example
+```
+from ultralytics import RTDETR, YOLO
+
+# Define the path to the model
+model_path = r""
+# Define the directory containing the images
+img_dir = r""
+
+# Initialize the RTDETR model with the specified model path
+model = RTDETR(model_path)
+
+# Use the model to perform prediction on the images in the given directory
+# save=True: Save the prediction results
+# save_txt=False: Do not save the prediction results in text format
+# show_conf=False: Do not show the confidence scores
+# show_labels=False: Do not show the labels
+model.predict(img_dir, save=True, save_txt=False, show_conf=False, show_labels=False)
+```
 
 
 
