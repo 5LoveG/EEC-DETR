@@ -1,11 +1,15 @@
 # EEC-DETR
-SAR ship detection
-requirements
-首先安装the ultralytics package,in a Python>=3.8 environment with PyTorch>=1.8.
+## SAR ship detection
 
+### Requirements
+1. First, install the `ultralytics` package in a Python environment with `Python>=3.8` and `PyTorch>=1.8`.
+```bash
 pip install ultralytics
-
-然后安装本项目需要的环境
+```
+2. Then, install the required environment for this project.
+```bash
 pip install requirements.txt
+```
+3. Select various model configurations in the `cfg\models` folder for experimental comparison. There are already baseline models and the EEC-DETR model designed by me. The `.py` files in the `nn\modules` folder contain various modules, such as `PSCONV`, `WTCONV`, etc. You are supported to create new `.yaml` files in the `cfg\models` folder to freely configure new models. 
 
-在cfg文件夹中选择各种模型配置进行实验比对，其中已经有基线模型，和我设计的EEC-DETR模型。modules.py文件中
+
