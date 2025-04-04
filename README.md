@@ -1,6 +1,8 @@
 # EEC-DETR
 ## SAR ship detection
 
+Xinchi Zhao "Efficient Transformer - based SAR Ship Detection with Hybrid Cross - Fusion Modules," The Visual Computer
+
 ### Requirements
 1. First, install the `ultralytics` package in a Python environment with `Python>=3.8` and `PyTorch>=1.8`.
 ```bash
