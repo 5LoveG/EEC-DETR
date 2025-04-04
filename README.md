@@ -1,7 +1,7 @@
 # EEC-DETR
 ## SAR ship detection
 
- · Xinchi Zhao "Efficient Transformer - based SAR Ship Detection with Hybrid Cross - Fusion Modules," The Visual Computer
+  - Xinchi Zhao "Efficient Transformer - based SAR Ship Detection with Hybrid Cross - Fusion Modules," The Visual Computer
 
 ### Requirements
 1. First, install the `ultralytics` package in a Python environment with `Python>=3.8` and `PyTorch>=1.8`.
@@ -67,6 +67,5 @@ model = RTDETR(model_path)
 # show_labels=False: Do not show the labels
 model.predict(img_dir, save=True, save_txt=False, show_conf=False, show_labels=False)
 ```
-
 
 
