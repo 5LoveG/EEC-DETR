@@ -16,6 +16,7 @@ pip install requirements.txt
 1.Select various model configurations in the `cfg\models` folder for experimental comparison. There are already baseline models and the EEC-DETR model designed by me. The `.py` files in the `nn\modules` folder contain various modules, such as `PSCONV`, `WTCONV`, etc. You are supported to create new `.yaml` files in the `cfg\models` folder to freely configure new models. 
 
 2.example
+```
 Import the RTDETR class from the ultralytics library
 from ultralytics import RTDETR
 
